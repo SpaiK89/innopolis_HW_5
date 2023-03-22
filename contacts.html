@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+            <nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu menu__box">
+                        <li><a class="menu__link" href="index.html">Главная</a></li>
+                        <li><a class="menu__link" href="students.html">Студенты</a></li>
+                        <li><a class="menu__link" href="about.html">О курсе</a></li>
+                        <li><a class="menu__link active__menu__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <div class="popup">
+            <h3 class="form_title">Войти на сайт</h3>
+            <form class="form_login" action="#" method="post">
+                <input class="input_login" type="text" placeholder="Логин">
+                <input class="input_login" type="password" placeholder="Пароль">
+                <button class="form_button" type="submit">Войти</button>
+            </form>
+        </div>
+        <main class="content_contacts">
+            <div class="contacts__title">
+                <h1 class="content__title">Как нас найти 🗺️️️</h1>
+            </div>
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1d89c4e374ac562611f059deff9eed7275693c20a5f2b2868e317fe1507c3da&amp;max-width=1268&amp;height=370&amp;lang=ru_RU&amp;scroll=true"></script>
+            <div class="contacts__data">
+                <h2 class="content__subtitle">Наши контакты</h2>
+                <p class="content__paragraph">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+                <p class="content__telephone">Тел: +7 (812) 555-55-55</p>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>2023 &copy; <a href="#">учебный центр</a></p>
+    </footer>
+    <script>
+        const buttonEl = document.querySelector('.button');
+        const popupEl = document.querySelector('.popup');
+
+        buttonEl.addEventListener('click', function (e) {
+            popupEl.classList.toggle('visible')
+        });
+    </script>
+</body>
+
+</html>

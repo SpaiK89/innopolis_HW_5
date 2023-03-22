@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+            <nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu menu__box">
+                        <li><a class="menu__link" href="index.html">Главная</a></li>
+                        <li><a class="menu__link active__menu__link" href="students.html">Студенты</a></li>
+                        <li><a class="menu__link" href="about.html">О курсе</a></li>
+                        <li><a class="menu__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <div class="popup">
+            <h3 class="form_title">Войти на сайт</h3>
+            <form class="form_login" action="#" method="post">
+                <input class="input_login" type="text" placeholder="Логин">
+                <input class="input_login" type="password" placeholder="Пароль">
+                <button class="form_button" type="submit">Войти</button>
+            </form>
+        </div>
+        <main class="content__students">
+            <h1 class="content__title__students">Студенты потока 08.02.2020 👧👦</h1>
+            <div class="students_info">
+                <div class="student">
+                    <img class="student_photo" src="img/student_photo.jpg" alt="Фото студента 1">
+                    <p>Василий Иванов</p>
+                </div>
+                <div class="student">
+                    <img class="student_photo" src="img/student_photo.jpg" alt="Фото студента 2">
+                    <p>Мария Александрова</p>
+                    <p class="student__new">новичок</p>
+                </div>
+                <div class="student">
+                    <img class="student_photo" src="img/student_photo.jpg" alt="Фото студента 3">
+                    <p>Мария Александрова</p>
+                </div>
+                <div class="student">
+                    <img class="student_photo" src="img/student_photo.jpg" alt="Фото студента 4">
+                    <p>Василий Иванов</p>
+                </div>
+                <div class="student">
+                    <img class="student_photo" src="img/student_photo.jpg" alt="Фото студента 5">
+                    <p>Василий Иванов</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>2023 &copy; <a href="#">учебный центр</a></p>
+    </footer>
+    <script>
+        const buttonEl = document.querySelector('.button');
+        const popupEl = document.querySelector('.popup');
+
+        buttonEl.addEventListener('click', function (e) {
+            popupEl.classList.toggle('visible')
+        });
+    </script>
+</body>
+
+</html>

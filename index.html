@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+            <nav>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu menu__box">
+                        <li><a class="menu__link active__menu__link" href="index.html">Главная</a></li>
+                        <li><a class="menu__link" href="students.html">Студенты</a></li>
+                        <li><a class="menu__link" href="about.html">О курсе</a></li>
+                        <li><a class="menu__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="button">Войти</button>
+        </header>
+        <div class="popup">
+            <h3 class="form_title">Войти на сайт</h3>
+            <form class="form_login" action="#" method="post">
+                <input class="input_login" type="text" placeholder="Логин">
+                <input class="input_login" type="password" placeholder="Пароль">
+                <button class="form_button" type="submit">Войти</button>
+            </form>
+        </div>
+        <main class="content">
+            <h1 class="content__title">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+            <img class="main_content_photo" src="img/main_content_photo.jpg" alt="Фотос главной страницы">
+            <div class="content__text">
+                <section>
+                    <article class="content__subtext">
+                        <h2 class="content__subtitle">
+                            Для кого этот курс
+                        </h2>
+                        <p class="content__paragraph">
+                            Этот курс рассчитан на новичков, которые только начинают знакомство с веб-разработкой. В
+                            начале
+                            курса вы узнаете о том,
+                            как устроен Интернет и веб-сайты.
+                            Для обучения необходимо только владеть компьютерной грамотностью (пользоваться браузером,
+                            создавать
+                            папки и файлы,
+                            устанавливать программы).
+                        </p>
+                    </article>
+                    <article class="content__subtext">
+                        <h2 class="content__subtitle">
+                            Чему вы научитесь
+                        </h2>
+                        <p class="content__paragraph">
+                            На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. Изучите основы
+                            языков
+                            <strong>HTML</strong>, <strong>CSS</strong> и немного
+                            <strong>JavaScript</strong>. Мы вместе сверстаем сайт нашей группы по этому макету. А затем
+                            вы
+                            <span class="orange">сами</span> сверстаете
+                            свои
+                            личные странички в
+                            качестве домашнего задания и мы выложим все это на сервер.
+                        </p>
+                    </article>
+                </section>
+                <div class="quote">
+                    <h3 class="quote__first">
+                        “
+                    </h3>
+                    <h3 class="quote__text">
+                        Учимся вместе!
+                    </h3>
+                    <h3 class="quote__last">
+                        ”
+                    </h3>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>2023 &copy; <a href="#">учебный центр</a></p>
+    </footer>
+    <script>
+        const buttonEl = document.querySelector('.button');
+        const popupEl = document.querySelector('.popup');
+
+        buttonEl.addEventListener('click', function (e) {
+            popupEl.classList.toggle('visible')
+        });
+    </script>
+</body>
+
+</html>
