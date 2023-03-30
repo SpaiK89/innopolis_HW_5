@@ -290,7 +290,7 @@ body {
 .students_info {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
